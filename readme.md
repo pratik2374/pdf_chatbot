@@ -7,7 +7,7 @@ This project is a Retrieval-Augmented Generation (RAG) application built using L
 - **Conversation History**: Stores conversation history to improve response accuracy.
 - **PDF Upload**: Users can upload PDFs and get responses based on the content of the PDFs.
 - **Huggingface Vector Embeddings**: Utilizes Huggingface vector embeddings for better response generation.
-- **Streamlit Deployment**: The application is deployed using Streamlit for an interactive user interface.
+
 
 ## Installation
 
@@ -23,14 +23,19 @@ This project is a Retrieval-Augmented Generation (RAG) application built using L
     ```bash
     pip install -r requirements.txt
     ```
-
 ## Usage
 
-1. Run the application:
+1. Create a `.env` file in the project directory and add your OpenAI API key and Huggingface token:
+    ```plaintext
+    OPENAI_API_KEY=your_openai_api_key
+    HUGGINGFACE_TOKEN=your_huggingface_token
+    ```
+2. Run the application:
     ```bash
     streamlit run app.py
     ```
-2. Open your web browser and go to `http://localhost:8501` to interact with the application.
+3. Open your web browser and go to `http://localhost:8501` to interact with the application.
+- **Streamlit Deployment**: The application is deployed using Streamlit for an interactive user interface.
 
 ## Contributing
 
